@@ -14,7 +14,7 @@ Feature: Medical Appointment Management
       Examples:
         |strDoctorFName|strDoctorLName| strDoctorPhone   |strDoctorDocType     |strDoctorDocument|strDoctorMessage|
         | Martín       | Botero       |5707700           |Cédula de extrangería|10101066         |Datos guardados correctamente.|
-        | Leidy        | Graciano     | 3004006969       |Pasaportes           |20202020         |No se pudo guardar debido a:|
+#        | Leidy        | Graciano     | 3004006969       |Pasaportes           |20202020         |No se pudo guardar debido a:|
 
   @Scenario2:
     Scenario Outline: Register a patient
@@ -27,7 +27,7 @@ Feature: Medical Appointment Management
         |<strPatientMessage>|
       Examples:
         |strPatientFName|strPatientLName| strPatientPhone|strPatientDocType   |strPatientDocument|boolPrepaid|strPatientMessage|
-        | Juan David    | Botero        | 3223690000     |Cédula de ciudadanía|30303055          |true       |Datos guardados correctamente.|
+        | Juan David    | Botero        | 3223690000     |Cédula de extrangería|30303055          |true       |Datos guardados correctamente.|
         | Dante         | Aligieri      | 3194001111     |Pasaportes          |40404040          |false      |No se pudo guardar debido a:|
 
   @Scenario3:

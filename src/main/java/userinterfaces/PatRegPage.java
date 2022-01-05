@@ -17,7 +17,7 @@ public class PatRegPage extends PageObject {
             .located(By.name("telephone"));
 
     public static Target docTypeOption(String docType){
-        return Target.the("Select the document type from the list").located(By.name("identification_type"));
+        return Target.the("Select the document type from the list").located(By.xpath("//select[@name='identification_type']/option[@value='"+ docType +"']"));
     }
 
     public static final Target DOCUMENT_INPUT = Target.the("Input for entering doctor's document")
